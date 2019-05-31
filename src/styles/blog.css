@@ -2,14 +2,29 @@
 .article {
   padding: 10px;
   border: 1px solid blue;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .article__header {
   font-size: 1.5em;
+  margin-bottom: 20px
+}
+
+.article__content {
+  float: left;
+  width: 60%; 
+  margin-bottom: 20px;
 }
 
 .article__footer {
+  clear: both;
   padding: 0 30px;
+}
+
+aside {
+  width: 30%;
+  float: right;;
 }
 
 .goldenrod {
@@ -18,4 +33,8 @@
 
 .dashed {
   border: 1px dashed black;
+}
+
+aside, .article__content {
+  flex: space-between; 
 }
